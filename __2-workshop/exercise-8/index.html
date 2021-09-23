@@ -10,10 +10,12 @@
 <label for="Email">Email:</label>
 <input type="text">
 <h2>Which taxi do you require?</h2>
-<input type="radio">
+<input type="radio" id="car" name="vehicle_choice" value="Car">
 <label for="car">Car</label>
-<input type="radio">Van</label>
-<input type="radio">Tuk Tuk</label>
+<input type="radio" id="van" name="vehicle_choice" value="Van">
+<label for="van">Van</label>
+<input type="radio" id="tuk tuk" name="vehicle_choice" value="Tuk Tuk">Tuk Tuk
+<label for="tuk tuk">Tuk Tuk</label>
 <h2>Choose your extras</h2>
 <input type="checkbox">
 <label for="baby seat">Baby Seat</label>
@@ -22,9 +24,14 @@
 <input type="checkbox">
 <label for="privacy windows">Privacy windows</label>
 <h2>Where would you like us to pick you up?</h2>
-<
-
-</label>
+<p>Pick up location:</p>
+<select name="location" id="location">
+<optgroup label="Select One">
+<option value="select one">Select one</option>  
+</optgroup>
+</select>
+<h2>Additional instructions</h2>
+<p>Special</p>
 
 </form>
 </body>
